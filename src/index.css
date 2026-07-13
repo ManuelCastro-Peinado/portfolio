@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fondo general */
+body {
+  margin: 0;
+  color: #f8fafc;
+  background-color: #020617;
+  font-family: Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Luces del fondo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(34,211,238,.12), transparent 30%),
+    radial-gradient(circle at 85% 80%, rgba(59,130,246,.10), transparent 30%);
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* Cuadrícula moderna */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  opacity: .25;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+/* Scroll personalizado */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #155e75;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee;
+}
+
+/* Selección de texto */
+
+::selection {
+  background: #22d3ee;
+  color: #020617;
+}
