@@ -95,6 +95,7 @@ function Hero() {
               View Projects
             </a>
 
+            
             <a
               href="/cv/CV_Manuel_Castro_Peinado(EN).pdf"
               download
@@ -102,6 +103,7 @@ function Hero() {
             >
               Download CV
             </a>
+
 
           </div>
 
