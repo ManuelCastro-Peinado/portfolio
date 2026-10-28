@@ -96,7 +96,7 @@ function Hero() {
             </a>
 
             <a
-              href="/cv/Manuel_Castro_Peinado_CV.pdf"
+              href="/cv/CV_Manuel_Castro_Peinado(EN).pdf"
               download
               className="border border-cyan-500 hover:bg-cyan-500 hover:text-slate-900 px-8 py-4 rounded-xl duration-300 font-semibold"
             >
